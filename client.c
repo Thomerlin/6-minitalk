@@ -6,7 +6,7 @@
 /*   By: tyago-ri <tyago-ri@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/08 05:17:29 by tyago-ri          #+#    #+#             */
-/*   Updated: 2021/12/14 06:36:14 by tyago-ri         ###   ########.fr       */
+/*   Updated: 2021/12/14 08:22:33 by tyago-ri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,12 +18,12 @@ void	signal_handler(int signum)
 
 	if (signum == SIGUSR1 && flag)
 	{
-		ft_putstr_fd("\nMessagem Enviada...", 1);
+		ft_putstr_fd("\nMessagem Enviada...\n", 1);
 		flag = 0;
 	}
 	if (signum == SIGUSR2)
 	{
-		ft_putstr_fd("\nMessagem Recebida...\n\n", 1);
+		ft_putstr_fd("Messagem Recebida...\n\n", 1);
 		flag = 1;
 		exit(EXIT_SUCCESS);
 	}
